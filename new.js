@@ -34,6 +34,6 @@ function display()
 {
 var x=document.form1.email.value;
 var y=document.form1.text1.value;
-var z=document.form1.password.value;
+var z=document.form1.name.value;
 alert("Email:"+x+"     "+"Phone Number :"+y+"     "+"Password:"+z);
 }
