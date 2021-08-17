@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="style1.css" rel="stylesheet">
+    <style>
+      @media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h1>THE LOGO</h1></a>
+        </div>
+      </nav>
+<section class='my-3'class="block" id="about">
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-12">
+        <img src="img/image-04.jpg" alt="New York" width="100%" height=auto>
+       </div>
+       <div class="col-lg-6 col-md-6 col-12 container my-5">
+         <h1>Register With us</h1>
+        <form name="form1">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Phone Number</label>
+            <input type="text" class="form-control" id="phone" placeholder="Enter Phone" name='text1'>
+            <small id="phoneHelp" class="form-text text-muted">We'll never share your phone with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input name= "password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary" onclick="phonenumber(document.form1.text1);ValidateEmail(document.form1.email); display();">Submit</button>
+        </form>
+       </div>
+  </div>
+  </section>
+  <script src = "new.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
