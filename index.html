@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="style1.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><h1>THE LOGO</h1></a>
         </div>
@@ -24,18 +24,17 @@
          <h1>Register With us</h1>
         <form name="form1">
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input name= "name" type="text" class="form-control" id="name" placeholder="Enter Name">
+            </div>
+            <label for="Email1">Email address</label>
+            <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Phone Number</label>
             <input type="text" class="form-control" id="phone" placeholder="Enter Phone" name='text1'>
-            <small id="phoneHelp" class="form-text text-muted">We'll never share your phone with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input name= "password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <small id="phoneHelp" class="form-text text-muted">Enter correct 10 digit phone number</small>
           </div>
           <br>
           <button type="submit" class="btn btn-primary" onclick="phonenumber(document.form1.text1);ValidateEmail(document.form1.email); display();">Submit</button>
